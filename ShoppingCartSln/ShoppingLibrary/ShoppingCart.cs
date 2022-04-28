@@ -8,6 +8,7 @@ namespace ShoppingLibrary
 {
     public class ShoppingCart //zoo
     {
+        //List for the items and prices
         List<ShoppingCartItem> _ShoppingCartItems = new List<ShoppingCartItem>();
 
         public ShoppingCart()
@@ -15,12 +16,14 @@ namespace ShoppingLibrary
           
           
         }
-       
+
+       //adds items to list
         public void AddShoppingItem(ShoppingCartItem item)
         {
             _ShoppingCartItems.Add(item);
         }
 
+        //calculate sub total
         public double GetSubTotal()
         {
             double total = 0;
@@ -31,7 +34,8 @@ namespace ShoppingLibrary
             }
             return total;
         }
-       
+
+       //calculate vat
         public double GetVat()
         {
            double vat = 0;
@@ -41,6 +45,7 @@ namespace ShoppingLibrary
            return vat;
         }  
 
+        //returns all the items and prices
         public List<ShoppingCartItem>GetShoppingCartItems()
         {
             return _ShoppingCartItems;

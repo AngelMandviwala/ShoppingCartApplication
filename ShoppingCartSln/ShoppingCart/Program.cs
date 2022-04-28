@@ -23,14 +23,16 @@ namespace ShoppingCartApp
 
             shoppingCartItem = new ShoppingCartItem("Rice", 50);
             cart.AddShoppingItem(shoppingCartItem);
-
+            
+            //allows you to write the list to the console
             List<ShoppingCartItem> items = cart.GetShoppingCartItems();
             foreach(ShoppingCartItem item in items)
             {
                 Console.Write(item.Name + "\t\t");
                 Console.WriteLine(item.Price);
             }
-
+            
+            //writes the sub total and vat to the console
             Console.WriteLine("Sub Total: \t" + cart.GetSubTotal());
             Console.WriteLine("With VAT: \t" + cart.GetVat());
             
