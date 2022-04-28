@@ -21,9 +21,9 @@ namespace ShoppingCartApp
             shoppingCartItem = new ShoppingCartItem("Macbook", 25000);
             cart.AddShoppingItem(shoppingCartItem);
 
-            shoppingCartItem = new ShoppingCartItem("Rice", 50);
+            shoppingCartItem = new ShoppingCartItem("Iphone 8", 5500);
             cart.AddShoppingItem(shoppingCartItem);
-            
+
             //allows you to write the list to the console
             List<ShoppingCartItem> items = cart.GetShoppingCartItems();
             foreach(ShoppingCartItem item in items)
